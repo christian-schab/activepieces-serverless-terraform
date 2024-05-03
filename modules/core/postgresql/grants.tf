@@ -13,6 +13,8 @@ provider "postgresql" {
 }
 
 resource "postgresql_role" "user_role" {
+  depends_on = [time_sleep.wait_for_dns]
+
   name     = local.USER_NAME
   login    = true
   password = local.USER_PASSWORD

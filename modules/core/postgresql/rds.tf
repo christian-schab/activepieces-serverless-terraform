@@ -26,6 +26,10 @@ resource "aws_rds_cluster_instance" "aurora_serverless_instance" {
   publicly_accessible = true
 }
 
+resource "time_sleep" "wait_for_dns" {
+  depends_on = [aws_rds_cluster.aurora_cluster, aws_rds_cluster_instance.aurora_serverless_instance]
 
+  create_duration = "3m"
+}
 
 
