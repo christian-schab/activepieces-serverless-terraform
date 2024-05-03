@@ -47,7 +47,7 @@ If you haven't Terraform installed yet, check it out here:
 ### 1. Clone repository
 
 ```
-git clone https://github.com/coasy/activepieces-serverless-terraform.git
+git clone https://github.com/christian-schab/activepieces-serverless-terraform.git
 cd activepieces-serverless-terraform
 ```
 
