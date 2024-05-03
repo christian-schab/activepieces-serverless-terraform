@@ -1,11 +1,4 @@
 terraform {
-  backend "remote" {
-    organization = "csyt"
-
-    workspaces {
-      prefix = "csyt-activepieces-"
-    }
-  }
 
   required_providers {
     aws = {
