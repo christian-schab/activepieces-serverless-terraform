@@ -4,10 +4,24 @@ resource "random_password" "ap_encryption_key" {
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
 
-resource "aws_ssm_parameter" "user_password" {
+resource "random_password" "ap_jwt_secret" {
+  length           = 16
+  special          = true
+  override_special = "!#$%&*()-_=+[]{}<>:?"
+}
+
+
+resource "aws_ssm_parameter" "ap_encryption_key" {
   name      = "/${var.PREFIX}/AP/ENCRYPTION_KEY"
   type      = "SecureString"
   value     = random_password.ap_encryption_key.result
+  overwrite = true
+}
+
+resource "aws_ssm_parameter" "ap_jwt_secret" {
+  name      = "/${var.PREFIX}/AP/JWT_SECRET"
+  type      = "SecureString"
+  value     = random_password.ap_jwt_secret.result
   overwrite = true
 }
 
@@ -106,6 +120,9 @@ resource "aws_ecs_task_definition" "activepieces_task_definition" {
         }, {
           name      = "AP_ENCRYPTION_KEY",
           valueFrom = "arn:aws:ssm:${var.AWS_REGION}:${var.AWS_ACCOUNT_ID}:parameter/${var.PREFIX}/AP/ENCRYPTION_KEY"
+        }, {
+          name      = "AP_JWT_SECRET",
+          valueFrom = "arn:aws:ssm:${var.AWS_REGION}:${var.AWS_ACCOUNT_ID}:parameter/${var.PREFIX}/AP/JWT_SECRET"
         }
       ]
     }
