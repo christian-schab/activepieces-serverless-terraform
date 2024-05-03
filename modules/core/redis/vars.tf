@@ -1,2 +1,1 @@
-variable "STAGE" {}
-variable "TENANT_ID" {}
+variable "PREFIX" {}

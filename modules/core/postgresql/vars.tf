@@ -1,3 +1,3 @@
-variable "STAGE" {}
-variable "TENANT_ID" {}
-variable "DB_PASSWORD" {}
+variable "PREFIX" {}
+variable "SG_POSTGRES_DB_ID" {}
+variable "SG_AP_INSTANCES_ID" {}

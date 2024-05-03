@@ -13,19 +13,14 @@ terraform {
       version = "~> 4.46"
     }
 
-    cloudflare = {
-      source  = "cloudflare/cloudflare"
-      version = "~> 2.0"
-    }
-
-    github = {
-      source  = "integrations/github"
-      version = "5.3.0"
-    }
-
     upstash = {
       source = "upstash/upstash"
       version = "1.3.0"
+    }
+
+    postgresql = {
+      source = "NitriKx/postgresql"
+      version = "1.21.2"
     }
   }
 
