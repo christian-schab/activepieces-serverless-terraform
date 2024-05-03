@@ -69,6 +69,11 @@ terraform init
 terraform apply
 ```
 
+### 4. Launch Browser
+The terraform apply ends with the output of an endpoint.
+
+It takes a couple of minutes and then the activepieces frontend should be available through this endpoint.
+
 ## Variables
 
 | Name                  | Description                                                   |
