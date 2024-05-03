@@ -14,9 +14,8 @@ variable "AWS_REGION" {}
 variable "AWS_ACCOUNT_ID" {}
 variable "AWS_VPC_ID" {}
 
-variable "AP_INSTANCES" {}
+variable "TASK_INSTANCES" {}
 variable "TASK_CPU" {}
-
 variable "TASK_MEMORY" {}
 
 variable "SG_AP_INSTANCES_ID" {}

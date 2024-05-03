@@ -116,7 +116,7 @@ resource "aws_ecs_service" "activepieces_task_service" {
   name            = "${var.PREFIX}__activepieces-service"
   cluster         = aws_ecs_cluster.activepieces_cluster.id
   task_definition = aws_ecs_task_definition.activepieces_task_definition.arn
-  desired_count   = var.AP_INSTANCES
+  desired_count   = var.TASK_INSTANCES
 
   depends_on = [aws_lb_target_group.ap_alb_tg]
 

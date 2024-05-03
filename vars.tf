@@ -17,26 +17,14 @@ variable "AP_LICENSE_KEY" {
   default = ""
 }
 
-variable "AP_FRONTEND_URL" {
-  default = "http://localhost:80"
-}
+variable "AP_FRONTEND_URL" {}
 
-variable "AP_EDITION" {
-  default = "ce"
-}
+variable "AP_EDITION" {}
 
 variable "AP_EXECUTION_MODE" {
   default = "UNSANDBOXED"
 }
 
-variable "AP_INSTANCES" {
-  default = 1
-}
-
-variable "TASK_CPU" {
-  default = 4096
-}
-
-variable "TASK_MEMORY" {
-  default = 8192
-}
+variable "TASK_INSTANCES" {}
+variable "TASK_CPU" {}
+variable "TASK_MEMORY" {}

@@ -38,3 +38,25 @@ If you haven't Terraform installed yet, check it out here:
 
 ## Usage
 
+### 1. Clone repository
+
+```
+git clone https://github.com/coasy/activepieces-serverless-terraform.git
+cd activepieces-serverless-terraform
+```
+
+### 2. Modify variables
+
+Check file terraform.tfvars and modify credentials ans settings
+
+### 3. Init Terraform
+
+```
+terraform init
+```
+
+### 3. Plan and apply stack
+
+```
+terraform apply
+```

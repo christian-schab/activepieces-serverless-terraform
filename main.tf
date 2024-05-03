@@ -45,9 +45,9 @@ module "ecs" {
 
   DOCKER_IMAGE = var.DOCKER_IMAGE
 
-  AP_INSTANCES = var.AP_INSTANCES
-  TASK_CPU     = var.TASK_CPU
-  TASK_MEMORY  = var.TASK_MEMORY
+  TASK_INSTANCES = var.TASK_INSTANCES
+  TASK_CPU       = var.TASK_CPU
+  TASK_MEMORY    = var.TASK_MEMORY
 
   IAM_EXECUTION_ROLE_ARN = module.security.iam_execution_role_arn
   IAM_TASK_ROLE_ARN      = module.security.iam_task_role_arn
