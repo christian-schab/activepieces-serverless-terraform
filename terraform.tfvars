@@ -11,7 +11,7 @@ UPSTASH_API_KEY = "XXXXXX"
 
 TASK_INSTANCES = 2
 TASK_CPU       = 2048
-TASK_MEMORY    = 4048
+TASK_MEMORY    = 4096
 
 DOCKER_IMAGE = "activepieces/activepieces"
 

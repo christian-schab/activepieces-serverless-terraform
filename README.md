@@ -71,22 +71,22 @@ terraform apply
 
 ## Variables
 
-| Name                  | Description                                                    |
-|-----------------------|----------------------------------------------------------------|
-| PREFIX                | Name of your stack, used as a prefix for components            |
-| AWS_ACCOUNT_ID        | ID (numeric) of your AWS accout                                |
-| AWS_VPC_ID            | ID (starts with vpc-) of your preferred / default VPC          |
-| AWS_ACCESS_KEY_ID     | Acces Key of your AWS Account                                  |
-| AWS_SECRET_ACCESS_KEY | Secret Key of your AWS Account                                 |
-| UPSTASH_EMAIL         | Email address of your Upstash account                          |
-| UPSTASH_API_KEY       | API Key for your Upstash account                               |
-| TASK_INSTANCES        | Number of instances to run activepieces                        |
-| TASK_CPU              | CPU units per task instance (2048 = 2vCPU)                     |
-| TASK_MEMORY           | Memory units per task instance (4084 = 4GB)                    |
-| DOCKER_IMAGE          | URL to docker image (default = "activepieces/activepieces")    |
+| Name                  | Description                                                   |
+|-----------------------|---------------------------------------------------------------|
+| PREFIX                | Name of your stack, used as a prefix for components           |
+| AWS_ACCOUNT_ID        | ID (numeric) of your AWS accout                               |
+| AWS_VPC_ID            | ID (starts with vpc-) of your preferred / default VPC         |
+| AWS_ACCESS_KEY_ID     | Acces Key of your AWS Account                                 |
+| AWS_SECRET_ACCESS_KEY | Secret Key of your AWS Account                                |
+| UPSTASH_EMAIL         | Email address of your Upstash account                         |
+| UPSTASH_API_KEY       | API Key for your Upstash account                              |
+| TASK_INSTANCES        | Number of instances to run activepieces                       |
+| TASK_CPU              | CPU units per task instance (2048 = 2vCPU)                    |
+| TASK_MEMORY           | Memory units per task instance (4096 = 4GB)                   |
+| DOCKER_IMAGE          | URL to docker image (default = "activepieces/activepieces")   |
 | AP_FRONTEND_URL       | Url that will be used to specify redirect url and webhook url. |
 | AP_FRONTEND_URL       | Url that will be used to specify redirect url and webhook url. |
-| AP_EDITION            | (ce = Community Edition, ee = Enterprise Edition)              |
+| AP_EDITION            | (ce = Community Edition, ee = Enterprise Edition)             |
 
 
 
