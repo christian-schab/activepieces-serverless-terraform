@@ -5,8 +5,8 @@ type-safe pieces framework written in Typescript.
 
 This template helps you deploy a serverless activepieces stack containing
 an [Aurora serverless v2 Postrgesql database](https://aws.amazon.com/rds/aurora/serverless/), a serverless Redis cluster
-hosted on [Upstash](https://upstash.com/) and activepieces Docker cluster running
-in [AWS Fargate](https://aws.amazon.com/fargate/)
+hosted on [Upstash](https://upstash.com/) and an activepieces Docker cluster running
+in [AWS Fargate](https://aws.amazon.com/fargate/).
 
 ## Goal
 
@@ -94,6 +94,11 @@ It takes a couple of minutes and then the activepieces frontend should be availa
 | AP_FRONTEND_URL       | Url that will be used to specify redirect url and webhook url. |
 | AP_EDITION            | (ce = Community Edition, ee = Enterprise Edition)             |
 
+## FAQ
+
+#### Why use Upstash instead of AWS ElastiCache or a Redis Docker container?
+
+I want to keep the overhead costs as low as possible. Upstash offers a pay-as-you-go plan with no fixed fee.
 
 
 
