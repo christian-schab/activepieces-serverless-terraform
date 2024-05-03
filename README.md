@@ -68,7 +68,7 @@ terraform init
 ```
 terraform apply
 ```
-Spinning-up all components can take 10-15 minutes. Please be patient ...
+Spinning-up all components takes typically 15-20 minutes. Please be patient 🧘🏻‍ ... 
 
 ### 4. Launch Browser
 The terraform apply ends with the output of an endpoint.
@@ -96,9 +96,20 @@ It takes a couple of minutes and then the activepieces frontend should be availa
 
 ## FAQ
 
-#### Why use Upstash instead of AWS ElastiCache or a Redis Docker container?
+#### Why use Upstash instead of AWS Elasticache or a Redis Docker container?
 
 I want to keep the overhead costs as low as possible. Upstash offers a pay-as-you-go plan with no fixed fee.
+BTW: Elasticache serverless starts at 90 USD / month, so no choice either.
+
+### What are the base (fixed) costs per month for this stack?
+
+- PostgresSql: ~50 USD
+- Redis: 0 USD
+- Loadbalancer: ~25 USD
+- Task Instance (2vCPU & 4GB RAM): ~10 USD
+
+So with a 2 task instances stack you should be starting at around 100 USD / month. 
+Many resources are billed per usage so always have a close look on your cost estimation and add billing alerts!
 
 
 
