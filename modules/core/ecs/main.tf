@@ -154,3 +154,9 @@ resource "aws_ecs_service" "activepieces_task_service" {
     target_group_arn = aws_lb_target_group.ap_alb_tg.arn
   }
 }
+
+resource "time_sleep" "wait_for_service" {
+  depends_on = [aws_ecs_service.activepieces_task_service]
+
+  create_duration = "3m"
+}
