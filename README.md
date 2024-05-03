@@ -68,6 +68,7 @@ terraform init
 ```
 terraform apply
 ```
+Spinning-up all components can take 10-15 minutes. Please be patient ...
 
 ### 4. Launch Browser
 The terraform apply ends with the output of an endpoint.
