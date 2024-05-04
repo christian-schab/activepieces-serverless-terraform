@@ -18,7 +18,7 @@ resource "aws_lb" "ap_alb" {
   security_groups = [var.SG_AP_INSTANCES_ID]
   subnets         = data.aws_subnets.default_subnets.ids
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 }
 
 resource "aws_lb_target_group" "ap_alb_tg" {
